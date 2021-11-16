@@ -4,7 +4,7 @@ const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p
 
 const myKeyboard = document.getElementById("myKeyboard");
 
-const petList = ["crevette","pingouin","ecureuil","babouin","galinette","sanglier"];
+const petList = ["crevette","pingouin","ecureuil","babouin","galinette","sanglier","poule","autruche","pieuvre","ours","loup","rat","mouette","ragondin","phoque","loutre","hippopotame","moule"];
 
 let pet = petList[aleaNb(0,petList.length)]; // de 0 jusqua la longueur max du tableau car dans la fonction c'est définit comme ca
 console.log(pet);
@@ -49,7 +49,7 @@ alphabet.forEach(element => { // tableau.foreach - element est la valeur qu'on v
 
 
 let nbLetter = 0
-let life = 8
+let life = 15
 
 
 
@@ -94,31 +94,59 @@ myKeyboard.addEventListener("click", e => { // au click on recupere l'evenement
           play = false // on ne peut plus jouer apres car false
           break;
 
-          case 7 :
-             document.getElementById("myLife").innerHTML = "| | | | | | |"
+          case 15 :
+            document.getElementById("myLife").innerHTML = "| | | | | | | | | | | | | | |"
              break;
 
+            case 14 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | | | | | | |"
+                break;
+             case 13 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | | | | | |"
+                break;
+             case 12 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | | | | |"
+                break;
+             case 11 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | | | |"
+                break;
+             case 10 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | | |"
+                break;
+             case 9 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | | |"
+                break;
+             case 8 :
+                document.getElementById("myLife").innerHTML = "| | | | | | | |"
+                break;       
+
+              case 7 :
+                document.getElementById("myLife").innerHTML = "| | | | | | |"
+                break;
+
              case 6 :
-              document.getElementById("myLife").innerHTML = "| | | | | |"
-              break;
+                document.getElementById("myLife").innerHTML = "| | | | | |"
+                break;
 
               case 5 :
                 document.getElementById("myLife").innerHTML = "| | | | |"
                 break;
 
-                case 4 :
-                  document.getElementById("myLife").innerHTML = "| | | |"
-                  break;
+              case 4 :
+                document.getElementById("myLife").innerHTML = "| | | |"
+                break;
 
-                  case 3 :  document.getElementById("myLife").innerHTML = "| | |"
-                  break;
+              case 3 :
+                document.getElementById("myLife").innerHTML = "| | |"
+                break;
 
-                  case 2 :  document.getElementById("myLife").innerHTML = "| |"
-                  break;
+              case 2 :
+                document.getElementById("myLife").innerHTML = "| |"
+                break;
 
-                  case 1 :
-                    document.getElementById("myLife").innerHTML = "|"
-                    break;
+              case 1 :
+                document.getElementById("myLife").innerHTML = "|"
+                break;
 
           default:
             break;
